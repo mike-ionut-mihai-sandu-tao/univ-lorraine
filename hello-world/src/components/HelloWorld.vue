@@ -10,7 +10,11 @@ export default {
   props: {
     msg: String,
     student: String
-  }
+  },
+  mounted() {
+    const urlParams = new URLSearchParams(window.location.search);
+    this.student = urlParams.get("student");
+  },
 
 }
 </script>
