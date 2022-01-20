@@ -13,5 +13,6 @@ app.get('/', function(req, res){
 });
 
 app.listen(port, () => {
-  console.log(`nicoapp listening at http://localhost:${port} please wash your hands after use.`)
+  console.log(`nicoapp listening at http://localhost:${port} \n
+  please wash your hands after use.`)
 })
