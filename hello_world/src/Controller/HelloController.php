@@ -17,7 +17,16 @@ class HelloController extends AbstractController
      * @return Response
      * @Route("/hello", name="world")
      */
-    public function helloName(Request $request)
+    public function hello(Request $request)
+    {
+        return $this->render('hello_world.html.twig');
+    }
+
+    /**
+     * @return Response
+     * @Route("/hello/{name}", name="world_name")
+     */
+    public function helloName(Request $request, $name)
     {
         $name = $request->get('name');
 
@@ -25,5 +34,4 @@ class HelloController extends AbstractController
             "name" => $name
         ]);
     }
-
 }
