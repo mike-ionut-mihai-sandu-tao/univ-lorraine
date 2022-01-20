@@ -8,6 +8,7 @@ class ScriptApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
