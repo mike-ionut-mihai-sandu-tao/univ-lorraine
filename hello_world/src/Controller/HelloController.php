@@ -24,7 +24,7 @@ class HelloController extends AbstractController
 
     /**
      * @return Response
-     * @Route("/hello/{name}", name="world_name")
+     * @Route("/hello/{name}", name="name")
      */
     public function helloName(Request $request, $name)
     {
