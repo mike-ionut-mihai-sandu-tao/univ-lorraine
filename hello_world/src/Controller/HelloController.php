@@ -2,32 +2,25 @@
 
 namespace App\Controller;
 
-use http\Env\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class HelloController
  * @package App\Controller
- * @Route(path="/hello", name="hello_")
+ * @Route(path="/", name="hello_")
  */
 class HelloController extends AbstractController
 {
     /**
      * @return Response
-     * @Route("", name="world")
+     * @Route("/hello", name="world")
      */
-    public function hello()
+    public function helloName(Request $request)
     {
-        return $this->render('hello_world.html.twig');
-    }
+        $name = $request->get('name');
 
-    /**
-     * @return Response
-     * @Route("/{name}", name="world")
-     */
-    public function helloName($name)
-    {
         return $this->render('hello_world.html.twig', [
             "name" => $name
         ]);
