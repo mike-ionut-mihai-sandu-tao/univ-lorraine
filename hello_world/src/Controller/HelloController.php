@@ -28,8 +28,6 @@ class HelloController extends AbstractController
      */
     public function helloName(Request $request, $name)
     {
-        $name = $request->get('name');
-
         return $this->render('hello_world.html.twig', [
             "name" => $name
         ]);
