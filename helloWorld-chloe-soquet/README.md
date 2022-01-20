@@ -5,6 +5,9 @@
 ## Build Setup
 
 ``` bash
+
+cd helloWorld-chloe-soquet
+
 # install dependencies
 npm install
 
