@@ -1,14 +1,16 @@
 <template>
   <div class="hello">
-    Hello World !
+    Hello World {{studentNamet}}!
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  data(){
+    return{
+      studentNamet:"Callonego Colleen"
+    }
   }
 }
 </script>
