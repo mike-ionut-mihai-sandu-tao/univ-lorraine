@@ -1,6 +1,9 @@
 # hello-world
-
+```
+cd hello-world
+```
 ## Project setup
+
 ```
 npm install
 ```
